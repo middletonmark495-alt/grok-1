@@ -19,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "seed": "node scripts/seedProducts.js",
+    "deploy": "npm run build && firebase deploy"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
