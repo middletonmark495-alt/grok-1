@@ -1,0 +1,16 @@
+name: grok-1
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - --find-links https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+      - dm_haiku==0.0.12
+      - jax[cuda12-pip]==0.4.25
+      - numpy==1.26.4
+      - sentencepiece==0.2.0
+      - flake8
+      - pytest
